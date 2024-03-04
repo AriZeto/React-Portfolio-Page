@@ -13,7 +13,7 @@ Crafted with responsiveness in mind - prioritizing mobile compatibility followed
 By following the steps above, you will be able to see the web application running locally.
 Recall, you can also view the web app online at [arizeto.netlify.app](https://arizeto.netlify.app/)
 
-Usage: The application was designed to stay simple such that recruiters have all relevant information displayed at a pages glance. The homepage includes all necessary information, however, there is a link to my Resume within the navbar.
+**Usage:** The application was designed to stay simple such that recruiters have all relevant information displayed at a pages glance. The homepage includes all necessary information, however, there is a link to my Resume within the navbar.
 
 **Technologies:** This web app was built utilizing React + Vite. Libraries utilized within development include:
 
