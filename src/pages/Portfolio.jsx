@@ -1,0 +1,71 @@
+import { Link } from "react-router-dom";
+import styled from "@emotion/styled";
+
+const Container = styled.div`
+  @media (min-width: 587px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+`;
+
+const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  a {
+    color: #3e9854;
+  }
+  @media (min-width: 587px) {
+    max-width: 100%;
+  }
+`;
+
+function Portfolio() {
+  return (
+    <>
+      <h2>Portfolio</h2>
+      <Container>
+        <Card>
+          <h3>React Weather App</h3>
+          <Link to="https://github.com/osu-cs494-w24/assignment-3-AriZeto">
+            View on GitHub
+          </Link>
+        </Card>
+        <Card>
+          <h3>Games Web App</h3>
+          <Link to="https://guarded-anchorage-22628-bea728f3a7f0.herokuapp.com/games">
+            View Live Demo
+          </Link>
+          <Link to="https://github.com/AriZeto/Games-Web-App">
+            View on GitHub
+          </Link>
+        </Card>
+        <Card>
+          <h3>Class Circles</h3>
+          <Link to="https://github.com/guycdev/ClassCircles">
+            View on GitHub
+          </Link>
+        </Card>
+        <Card>
+          <h3>The Grand Auditorium</h3>
+          <Link to="https://github.com/AriZeto/The-Grand-Auditorium">
+            View on GitHub
+          </Link>
+        </Card>
+        <Card>
+          <h3>MERN Full Stack Showcase</h3>
+          <Link to="https://github.com/AriZeto/MERN-Developer-Showcase">
+            View on GitHub
+          </Link>
+        </Card>
+      </Container>
+    </>
+  );
+}
+
+export default Portfolio;
