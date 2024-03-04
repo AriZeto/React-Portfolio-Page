@@ -15,7 +15,7 @@ Recall, you can also view the web app online at [arielzeto.com](https://arizeto.
 
 Usage: The application was designed to stay simple such that recruiters have all relevant information displayed at a pages glance. The homepage includes all necessary information, however, there is a link to my Resume within the navbar.
 
-**Technologies: ** This web app was built utilizing React + Vite. Libraries utilized within development include:
+**Technologies:** This web app was built utilizing React + Vite. Libraries utilized within development include:
 
 - Emotion for CSS in JS.
 - React-fontawesome for some SVG's (whereas the rest were imported)
