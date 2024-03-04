@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const FooterUl = styled.footer`
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   background-color: #080808;
   padding: 1rem;
   @media (min-width: 587px) {
