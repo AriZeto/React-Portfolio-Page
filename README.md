@@ -1,4 +1,4 @@
-# See deployment of the site here: [https://arielzeto.com](https://arizeto.netlify.app/)
+# See deployment of the site here: [arielzeto.com](https://arizeto.netlify.app/)
 
 Crafted with responsiveness in mind - prioritizing mobile compatibility followed by optimization for larger screens.
 
