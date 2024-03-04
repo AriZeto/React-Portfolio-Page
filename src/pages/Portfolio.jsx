@@ -38,7 +38,7 @@ function Portfolio() {
         </Card>
         <Card>
           <h3>Games Web App</h3>
-          <Link to="https://guarded-anchorage-22628-bea728f3a7f0.herokuapp.com/games">
+          <Link to="https://intense-journey-49547-3965d03e6dee.herokuapp.com/">
             View Live Demo
           </Link>
           <Link to="https://github.com/AriZeto/Games-Web-App">
