@@ -68,7 +68,6 @@ const SkillsDisplay = styled.div`
 export default function Skills() {
   return (
     <>
-      <h2>Technical Skills:</h2>
       <h3>Languages: </h3>
       <SkillsDisplay>
         <SurroundSVG>
