@@ -33,7 +33,8 @@ function Portfolio() {
       <Container>
         <Card>
           <h3>React Weather App</h3>
-          <Link to="https://github.com/osu-cs494-w24/assignment-3-AriZeto">
+          <Link to="https://zetoweather.netlify.app/">View Live Demo</Link>
+          <Link to="https://github.com/AriZeto/React-Weather-App">
             View on GitHub
           </Link>
         </Card>
