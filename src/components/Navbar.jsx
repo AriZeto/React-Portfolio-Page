@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "@emotion/styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -48,6 +48,7 @@ const MobileNavToggle = styled.button`
   font-size: 2rem;
   :hover {
     color: #65d180;
+    cursor: pointer;
   }
   :active {
     color: #65d180;
@@ -56,12 +57,28 @@ const MobileNavToggle = styled.button`
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
+  const [, setMobileNav] = useState(false);
   const switchOn = () => {
     setToggle((prevToggle) => !prevToggle);
   };
+
+  useEffect(() => {
+    const screen = window.matchMedia("(min-width: 655px)");
+    const handleScreenChange = (e) => {
+      setMobileNav(e.matches);
+    };
+
+    screen.addEventListener("change", handleScreenChange);
+    setMobileNav(screen.matches);
+
+    return () => {
+      screen.removeEventListener("change", handleScreenChange);
+    };
+  }, []);
+
   return (
     <NavbarUL>
-      {window.innerWidth <= 586 && toggle === false ? (
+      {window.innerWidth <= 655 && toggle === false ? (
         <>
           <NavbarLi>
             <MobileNavToggle onClick={switchOn}>
@@ -71,7 +88,7 @@ export default function Navbar() {
         </>
       ) : (
         <>
-          {window.innerWidth <= 586 ? (
+          {window.innerWidth <= 655 ? (
             <>
               <NavbarLi>
                 <MobileNavToggle onClick={switchOn}>
@@ -82,15 +99,6 @@ export default function Navbar() {
               <NavbarLi>
                 <NavLink to="/">Home</NavLink>
               </NavbarLi>
-              {/* <NavbarLi>
-                <NavLink to="/">About</NavLink>
-              </NavbarLi>
-              <NavbarLi>
-                <NavLink to="/">Technical skills</NavLink>
-              </NavbarLi> */}
-              {/* <NavbarLi>
-                <NavLink to="/">Portfolio</NavLink>
-              </NavbarLi> */}
               <NavbarLi>
                 <NavLink to="/contact-resume">Contact & Resume</NavLink>
               </NavbarLi>
@@ -100,20 +108,7 @@ export default function Navbar() {
               <NavbarLi>
                 <NavLink to="/">Home</NavLink>
               </NavbarLi>
-              {/* <NavbarLi>
-                {" "}
-                <NavLink to="/">About</NavLink>
-              </NavbarLi>
               <NavbarLi>
-                {" "}
-                <NavLink to="/">Technical skills</NavLink>
-              </NavbarLi> */}
-              {/* <NavbarLi>
-                {" "}
-                <NavLink to="/">Portfolio</NavLink>
-              </NavbarLi> */}
-              <NavbarLi>
-                {" "}
                 <NavLink to="contact-resume">Contact & Resume</NavLink>
               </NavbarLi>
             </>

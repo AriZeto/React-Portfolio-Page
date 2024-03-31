@@ -8,7 +8,7 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import VSCodeSVG from "../assets/SVGs/Vscodesvg";
-import Nextjsvg from "../assets/SVGs/Nextjssvg";
+// import Nextjsvg from "../assets/SVGs/Nextjssvg";
 import MariaDBSvg from "../assets/SVGs/MariaDBSvg";
 import MongoDBSvg from "../assets/SVGs/MongoDBSvg";
 import ReduxSvg from "../assets/SVGs/ReduxSvg";
@@ -41,18 +41,7 @@ const SurroundSVG = styled.div`
     padding: 0;
     align-content: flex-end;
   }
-  /* @media (min-width: 587px) {
-    max-width: 3%;
-  } */
 `;
-
-// const ContainerType = styled.div`
-//   @media (min-width: 587px) {
-//     display: flex;
-//     flex-direction: column;
-//     border: 2px solid black;
-//   }
-// `;
 
 const SkillsDisplay = styled.div`
   display: flex;
@@ -106,10 +95,10 @@ export default function Skills() {
           <FontAwesomeIcon icon={faReact} />
           <h4>React.js</h4>
         </SurroundSVG>
-        <SurroundSVG>
+        {/* <SurroundSVG>
           <Nextjsvg />
           <h4>Next.js</h4>
-        </SurroundSVG>
+        </SurroundSVG> */}
         <SurroundSVG>
           <ReduxSvg />
           <h4>Redux.js</h4>

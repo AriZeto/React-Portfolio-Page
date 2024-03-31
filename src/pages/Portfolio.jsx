@@ -32,6 +32,13 @@ function Portfolio() {
       <h2>Portfolio</h2>
       <Container>
         <Card>
+          <h3>YouTube Tidy</h3>
+          <Link to="https://youtubetidy.netlify.app/">View Live Demo</Link>
+          <Link to="https://github.com/AriZeto/youtube-tidy">
+            View on GitHub
+          </Link>
+        </Card>
+        <Card>
           <h3>React Weather App</h3>
           <Link to="https://zetoweather.netlify.app/">View Live Demo</Link>
           <Link to="https://github.com/AriZeto/React-Weather-App">
@@ -59,12 +66,12 @@ function Portfolio() {
             View on GitHub
           </Link>
         </Card>
-        <Card>
+        {/* <Card>
           <h3>MERN Full Stack Showcase</h3>
           <Link to="https://github.com/AriZeto/MERN-Developer-Showcase">
             View on GitHub
           </Link>
-        </Card>
+        </Card> */}
       </Container>
     </>
   );
