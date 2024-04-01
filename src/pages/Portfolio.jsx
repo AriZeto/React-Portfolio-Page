@@ -56,7 +56,7 @@ function Portfolio() {
         </Card>
         <Card>
           <h3>Class Circles</h3>
-          <Link to="https://github.com/guycdev/ClassCircles">
+          <Link to="https://github.com/AriZeto/ClassCircles">
             View on GitHub
           </Link>
         </Card>
