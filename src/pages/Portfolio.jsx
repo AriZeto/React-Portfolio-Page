@@ -66,12 +66,6 @@ function Portfolio() {
             View on GitHub
           </Link>
         </Card>
-        {/* <Card>
-          <h3>MERN Full Stack Showcase</h3>
-          <Link to="https://github.com/AriZeto/MERN-Developer-Showcase">
-            View on GitHub
-          </Link>
-        </Card> */}
       </Container>
     </>
   );
