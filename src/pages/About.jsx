@@ -20,9 +20,9 @@ export default function About() {
         <SpecialSpan>Hello, my name is Ariel Zeto.</SpecialSpan>
       </p>
       <PStyle>
-        I'm currently pursuing my degree in Computer Science at Oregon State
-        University, following my completion of a Bachelor of Science in
-        Mathematics at Portland State University.
+        Recently graduated with a Bachelor of Science in Computer Science from
+        Oregon State University, following the completion of a Bachelor of
+        Science in Mathematics at Portland State University.
       </PStyle>
       <PStyle>
         I have a passion for data and creating wonderful user experiences, and
