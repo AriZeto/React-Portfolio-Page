@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import wafer from "../assets/wafer.jpg";
+import ari_zeto from "../assets/ari_zeto.jpg";
 
 const Container = styled.div`
   display: flex;
@@ -105,7 +105,7 @@ export default function LeftRight() {
         </Paragraph>
       </LeftColumn>
       <RightColumn>
-        <Image src={wafer} alt="Wafer" />
+        <Image src={ari_zeto} alt="Ari Zeto" />
       </RightColumn>
     </Container>
   );
