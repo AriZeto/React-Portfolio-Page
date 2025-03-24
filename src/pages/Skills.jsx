@@ -8,7 +8,6 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import VSCodeSVG from "../assets/SVGs/Vscodesvg";
-// import Nextjsvg from "../assets/SVGs/Nextjssvg";
 import MariaDBSvg from "../assets/SVGs/MariaDBSvg";
 import MongoDBSvg from "../assets/SVGs/MongoDBSvg";
 import ReduxSvg from "../assets/SVGs/ReduxSvg";
@@ -26,20 +25,48 @@ const SurroundSVG = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid black;
-  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   max-width: 10%;
   margin: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  background-color: #ffffff;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Cool effect */
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Animation effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: rgba(255, 255, 255, 0.4); /* Less transparent on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    animation: pulse 1s infinite; /* Pulse animation */
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
   svg {
     font-size: 5rem;
+    transition: transform 0.3s; /* Animation effect */
+    &:hover {
+      transform: rotate(360deg); /* Rotate on hover */
+    }
   }
+
   h4 {
     padding: 0;
     align-content: flex-end;
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow effect */
   }
 `;
 

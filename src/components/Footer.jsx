@@ -42,7 +42,7 @@ const SVGIcons = styled.svg`
 export default function Footer() {
   return (
     <FooterUl>
-      <FooterLi>&copy; 2024 Ariel Zeto.</FooterLi>
+      <FooterLi>&copy; 2024 - 2025 Ariel Zeto.</FooterLi>
       <FooterLi>
         <SVGIcons>
           <Link to="https://www.linkedin.com/in/ariel-zeto/">
